@@ -1,6 +1,6 @@
 # Governance Agent
 
-Status: planning and bootstrap only. No trigger, agent runtime, or notification is active.
+Status: checker and event-trigger code prepared. No trigger or notification is active.
 
 This private repository will host a governance agent separate from Move Learner.
 Move Learner is the first governed project and test case.
@@ -12,5 +12,6 @@ approve its own work, change project phases, edit governed code, or deploy.
 Initial GitHub target: `stevieceejay/Move-Learner`.
 Tracking issue: https://github.com/stevieceejay/Move-Learner/issues/1
 
-Runtime, event hooks, approval matching, tests, GitHub App permissions, and
-deployment require separate reviewed change sets and approvals.
+The approval checker and GitHub evidence adapter have synthetic tests. The
+pull-request event hook is proposed for offline testing. Package installation,
+GitHub App access, and deployment require separate approvals.
