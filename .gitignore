@@ -1,0 +1,11 @@
+node_modules/
+.eve/
+.output/
+.vercel/
+coverage/
+dist/
+artifacts/
+*.log
+.env
+.env.*
+!.env.example
