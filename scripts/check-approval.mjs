@@ -2,10 +2,8 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import policies from "../config/projects.json" with { type: "json" };
 
-const policies = JSON.parse(
-  readFileSync(new URL("../config/projects.json", import.meta.url), "utf8")
-);
 const hex = value => typeof value === "string" && /^(?:[0-9a-f]{40}|[0-9a-f]{64})$/.test(value);
 const pathOK = value =>
   typeof value === "string" && value.length > 0 &&
